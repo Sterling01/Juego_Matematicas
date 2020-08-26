@@ -1,0 +1,26 @@
+{
+  "name": "JuegoTelegram",
+  "version": "1.0.0",
+  "description": "",
+  "main": "juego_pp.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "install": "^0.13.0",
+    "node-telegram-bot-api": "^0.50.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sterling01/JuegoPP.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sterling01/JuegoPP/issues"
+  },
+  "homepage": "https://github.com/Sterling01/JuegoPP#readme"
+}
