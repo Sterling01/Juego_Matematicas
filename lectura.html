@@ -1,0 +1,49 @@
+<html>
+<head>
+    <link rel="stylesheet" href="style1.css">
+    <script src="script1.js"></script>
+</head>
+<body>
+    <div class="Container">
+        <div class="center">
+            <div class="titulo">
+                <h1>Juego de Lectura</h1>
+            </div>
+            <button class="btn" id="start" onclick="toMenu()">Empezar</button>
+            
+            <div id="menu">
+                <div class="nivel-css">Selecciona una opción</div>
+            <div>
+                <button class="btn" onclick="toMenu1(0)">Cuentos</button>
+            </div>
+            <div>
+                <button class="btn" onclick="toMenu1(1)">Escritura</button>
+            </div>
+            </div>
+            
+            <div id="menu1">
+                <div id="nivel" class="nivel-css1">Selecciona un cuento</div>
+            <div>
+                <button class="btn" onclick="quiz(0)">Caperucita Roja</button>
+            </div>
+            <div>
+                <button class="btn" onclick="quiz(1)">Los tres Chanchitos</button>
+            </div>
+            <div>
+                <button class="btn" onclick="quiz(2)">El cohete de papel</button>
+            </div>
+            <br>
+            <div>
+                <button class="btn" onclick="toMenu()">Volver</button>
+            </div>
+        </div>
+        <div class="divTituloCuento">
+        <p id="tituloCuento"></p>
+        </div>
+        <br>
+    </div>
+    <div class="contenido" id="contenido"></div><br>
+    <div class="boton"><button class="btn" id="answer" onclick="toMenu1(0)">Volver</button></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="Container">
+        <div class="center">
+            <div class="titulo">
+                <h1>Juego de Matemáticas</h1>
+            </div>
+            <button class="btn" id="start" onclick="toMenu()">Empezar</button>
+            
+            <div id="menu">
+                <div class="nivel-css">Selecciona un tipo de operación</div>
+            <div>
+                <button class="btn" onclick="toMenu1(0)">Suma</button>
+            </div>
+            <div>
+                <button class="btn" onclick="toMenu1(1)">Resta</button>
+            </div>
+            <div>
+                <button class="btn" onclick="toMenu1(2)">Multiplicación</button>
+            </div>
+            
+            <div>
+                <button class="btn" onclick="toMenu1(3)">División</button>
+            </div>
+            </div>
+            
+            <div id="menu1">
+                <div id="nivel" class="nivel-css1">Selecciona un nivel</div>
+            <div>
+                <button class="btn" onclick="quiz(0)">Facil</button>
+            </div>
+            <div>
+                <button class="btn" onclick="quiz(1)">Medio</button>
+            </div>
+            <div>
+                <button class="btn" onclick="quiz(2)">Difícil</button>
+            </div> 
+        </div>
+        
+        <p id="score"></p>
+        <p id="timer"></p>
+        <br>
+        <div id="question">
+            <span id="op"></span>
+        </div>
+        <input type="text" id="input" value="" autocomplete = "off" autofocus>
+        <div class="salida">
+            <p id="output"></p>
+        </div>
+        <button class="btn" id="answer" onclick="check()">Comprobar</button>
+        <p id="victory"><p>
+        <button class="btn" id="restart" onclick="toMenu()">Jugar nuevamente</button>
+    </div>
+    </div>
+</body>
+</html>
