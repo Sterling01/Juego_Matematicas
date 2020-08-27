@@ -185,6 +185,7 @@ function quiz(n) {
 
 function check() {
   document.getElementById("output").style.display = "inline-block";
+  document.getElementById("botonVolver1").style.display = "none";
   if(operacion === 0){
     if (document.getElementById("input").value == a+b) {
         s = s + 1;

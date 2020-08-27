@@ -17,7 +17,7 @@ bot.onText(/ayuda/, (msg) => bot.sendMessage(msg.from.id, "Puedes escoger entre\
 bot.onText(/matematicas/, (msg) => bot.sendGame(msg.from.id, gameName));
 bot.on("callback_query", function (query) {
     if (query.game_short_name !== gameName) {
-        bot.answerCallbackQuery(query.id, "Sorry, '" + query.game_short_name + "' is not available.");
+        bot.answerCallbackQuery(query.id, "Lo sentimos el juego, '" + query.game_short_name + "' no esta disponible.");
     } else {
         queries[query.id] = query;
         let gameurl = "https://evening-fortress-51208.herokuapp.com/";
@@ -30,7 +30,7 @@ bot.on("callback_query", function (query) {
 bot.onText(/lectura/, (msg) => bot.sendGame(msg.from.id, gameName1));
 bot.on("callback_query", function (query) {
     if (query.game_short_name !== gameName1) {
-        bot.answerCallbackQuery(query.id, "Sorry, '" + query.game_short_name + "' is not available.");
+        bot.answerCallbackQuery(query.id, "Lo sentimos el juego, '" + query.game_short_name + "' no esta disponible.");
     } else {
         queries[query.id] = query;
         let gameurl = "https://still-scrubland-90481.herokuapp.com/";
