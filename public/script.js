@@ -11,10 +11,12 @@ function toMenu() {
   var start = document.getElementById("start");
   var restart = document.getElementById("restart");
   var menu = document.getElementById("menu");
+  var menu1 = document.getElementById("menu1");
   document.getElementById("victory").style.display = "none";
   start.style.display = "none";
   restart.style.display = "none";
   menu.style.display = "inline";  
+  menu1.style.display = "none"; 
 }
 
 function toMenu1(n) {
@@ -25,11 +27,25 @@ function toMenu1(n) {
   var restart = document.getElementById("restart");
   var menu = document.getElementById("menu");
   var menu1 = document.getElementById("menu1");
+  var op = document.getElementById("op");
+  var score = document.getElementById("score");
+  var question = document.getElementById("question");
+  var answer = document.getElementById("answer");
+  var input = document.getElementById("input");
+  var volver1 = document.getElementById("botonVolver1");
+  var output = document.getElementById("output")
   document.getElementById("victory").style.display = "none";
   start.style.display = "none";
   restart.style.display = "none";
   menu.style.display = "none";
-  menu1.style.display = "inline"; 
+  menu1.style.display = "inline";
+  op.style.display = "none";  
+  score.style.display = "none";
+  question.style.display = "none";
+  answer.style.display = "none";
+  input.style.display = "none"; 
+  volver1.style.display = "none";
+  output.style.display = "none";
 }
 
 function quiz(n) {
@@ -39,6 +55,8 @@ function quiz(n) {
   document.getElementById("input").select();
     
   var op = document.getElementById("op");
+  var volver1 = document.getElementById("botonVolver1");
+  volver1.style.display = "inline";
     
   if(operacion === 0){
       if(level === 0){
@@ -159,6 +177,7 @@ function quiz(n) {
   menu1.style.display = "none";
   score.style.display = "inline";
   score.innerHTML = "Puntaje: " + s + " de 10";
+  op.style.display = "inline";
   question.style.display = "inline";
   answer.style.display = "inline";
   input.style.display = "inline";  
