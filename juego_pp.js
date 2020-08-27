@@ -33,7 +33,7 @@ bot.on("callback_query", function (query) {
         bot.answerCallbackQuery(query.id, "Sorry, '" + query.game_short_name + "' is not available.");
     } else {
         queries[query.id] = query;
-        let gameurl = "https://evening-fortress-51208.herokuapp.com/";
+        let gameurl = "https://still-scrubland-90481.herokuapp.com/";
         bot.answerCallbackQuery({
             callback_query_id: query.id,
             url: gameurl
