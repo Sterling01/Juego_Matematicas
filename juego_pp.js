@@ -12,7 +12,7 @@ const gameName1 = process.env.JuegoLectMat || 'JuegoLectura';
 
 const queries = {};
 
-bot.onText(/start/, (msg) => bot.sendMessage(msg.from.id, "Puedes escoger entre\n /matematicas y\n /lectura."));
+bot.onText(/start|jugar|iniciar/, (msg) => bot.sendMessage(msg.from.id, "Puedes escoger entre\n /matematicas y\n /lectura."));
 bot.onText(/ayuda/, (msg) => bot.sendMessage(msg.from.id, "Puedes escoger entre\n /matematicas y\n /lectura."));
 bot.onText(/matematicas/, (msg) => bot.sendGame(msg.from.id, gameName));
 bot.on("callback_query", function (query) {
